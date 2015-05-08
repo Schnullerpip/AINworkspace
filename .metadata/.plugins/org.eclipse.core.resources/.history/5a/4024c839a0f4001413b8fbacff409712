@@ -1,0 +1,140 @@
+package aufgabe2;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class AdjacencyListDirectedGraph<V> implements DirectedGraph<V> {
+	
+	HashMap<V, HashMap<V, Double>> predecessors = new HashMap<>();
+	HashMap<V, HashMap<V, Double>> successors = new HashMap<>();
+
+	@Override
+	public boolean addVertex(V v) {
+		if(containsVertex(v))
+			return false;
+		predecessors.put(v, new HashMap<>());
+		successors.put(v, new HashMap<>());
+		return false;
+	}
+
+	@Override
+	public boolean addEdge(V v, V w) {		
+		return addEdge(v, w,1.0);
+	}
+
+	@Override
+	public boolean addEdge(V v, V w, double weight) {
+		if(!containsVertex(v))
+			throw new IllegalArgumentException("v nicht vorhanden!");
+		if(!containsVertex(w))
+			throw new IllegalArgumentException("w nicht vorhanden!");
+		if(weight <= 0)
+			throw new IllegalArgumentException("Gewichtung der Kante ist <= 0!");
+		
+		predecessors.get(v).put(w, weight);
+		successors.get(v).put(w, weight);
+		
+		return false;
+	}
+
+	@Override
+	public boolean containsVertex(V v) {
+		return successors.containsKey(v) || predecessors.containsKey(v);
+	}
+
+	@Override
+	public boolean containsEdge(V v, V w) {
+		return successors.get(v).containsKey(w) || predecessors.get(v).containsKey(w);
+	}
+
+	@Override
+	public double getWeight(V v, V w) {
+		int returnValue;
+		if(containsVertex(v)){
+			if(containsVertex(w)){
+				if(successors.containsKey(v)){
+					return successors.get(v).get(w);
+				}else{
+					return predecessors.get(v).get(w);
+				}
+			}
+			throw new IllegalArgumentException("w nicht vorhanden!");
+		}
+		throw new IllegalArgumentException("v nicht vorhanden!");
+	}
+
+	@Override
+	public int getNumberOfVertexes() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getNumberOfEdges() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<V> getVertexList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Edge<V>> getEdgeList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<V> getAdjacentVertexList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Edge<V>> getIncidentEdgeList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getInDegree(V v) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getOutDegree(V v) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<V> getPredecessorVertexList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<V> getSuccessorVertexList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Edge<V>> getOutgoingEdgeList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Edge<V>> getIncomingEdgeList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

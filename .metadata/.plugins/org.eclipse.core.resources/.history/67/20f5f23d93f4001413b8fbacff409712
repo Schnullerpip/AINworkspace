@@ -1,0 +1,92 @@
+package aufgabe2;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class AdjacencyListUndirectedGraph<V> implements UndirectedGraph<V>{
+	
+	HashMap<V, HashMap<V, Double>> adjacencyList = new HashMap<V, HashMap<V, Double>>();
+
+	@Override
+	public boolean addVertex(V v) {
+		if(adjacencyList.containsKey(v)){
+			
+		}
+		return false;
+	}
+
+	@Override
+	public boolean addEdge(V v, V w) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addEdge(V v, V w, double weight) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean containsVertex(V v) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean containsEdge(V v, V w) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public double getWeight(V v, V w) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getNumberOfVertexes() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getNumberOfEdges() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<V> getVertexList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Edge<V>> getEdgeList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<V> getAdjacentVertexList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Edge<V>> getIncidentEdgeList(V v) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getDegree(V v) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+}

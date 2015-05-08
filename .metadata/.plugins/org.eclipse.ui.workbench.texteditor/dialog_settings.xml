@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="486" key="DIALOG_X_ORIGIN"/>
+		<item value="22" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="Mütze" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="Muetze"/>
+			<item value="Guertel"/>
+			<item value="top"/>
+			<item value="InDegree"/>
+			<item value="EdgeList"/>
+			<item value="numberOfEd"/>
+			<item value="number"/>
+			<item value="Degree"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Mütze"/>
+			<item value="Gürtel"/>
+			<item value="Math.sin(Math.toRadians(PITCH))"/>
+			<item value="Math.cos(Math.toRadians(PITCH))"/>
+			<item value="edge"/>
+			<item value="b.board[i][o] = new Square"/>
+			<item value=" instanceof "/>
+			<item value="Piece"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="299" key="DIALOG_WIDTH"/>
+		<item value="1|Droid Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="451" key="DIALOG_HEIGHT"/>
+		<item value="933" key="DIALOG_X_ORIGIN"/>
+		<item value="204" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

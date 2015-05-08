@@ -1,0 +1,9 @@
+package aufgabe2;
+
+import java.util.HashMap;
+
+public class AdjacencyListDirectedGraph<V> implements DirectedGraph<V> {
+	
+	HashMap<V, HashMap<V, Double>> adjacencyList = new HashMap<>();
+
+}

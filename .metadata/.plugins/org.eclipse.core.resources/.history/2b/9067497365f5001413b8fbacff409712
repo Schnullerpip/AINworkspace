@@ -1,0 +1,26 @@
+package aufgabe2;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
+
+public class GraphTraversion<V> {
+
+	public static <V> List<V> depthFirstsSearch(Graph<V> g, V s) {
+		Stack<V> stack =new Stack<>();
+		List<V> resultList = new LinkedList<>();
+		List<V> besucht = new LinkedList<>();
+		
+		return resultList;
+	}
+
+	public static <V> List<V> breadthFirstSearch(Graph<V> g, V s) {
+		/* TODO */
+		return null;
+	}
+
+	public static <V> List<V> topologicalSort(DirectedGraph<V> g) {
+		/* TODO */
+		return null;
+	}
+}

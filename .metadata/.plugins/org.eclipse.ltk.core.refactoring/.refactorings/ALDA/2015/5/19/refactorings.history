@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;aufgabe2.AdjacencyListDIrectedGraph&apos; to &apos;AdjacencyListDirectedGraph&apos;&#x0A;- Original project: &apos;ALDA&apos;&#x0A;- Original element: &apos;aufgabe2.AdjacencyListDIrectedGraph&apos;&#x0A;- Renamed element: &apos;aufgabe2.AdjacencyListDirectedGraph&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AdjacencyListDIrectedGraph&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;aufgabe2{AdjacencyListDIrectedGraph.java[AdjacencyListDIrectedGraph" matchStrategy="1" name="AdjacencyListDirectedGraph" qualified="false" references="true" similarDeclarations="false" stamp="1430992081909" textual="false" version="1.0"/>
+</session>

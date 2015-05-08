@@ -1,0 +1,9 @@
+package aufgabe2;
+
+import java.util.HashMap;
+
+public class AdjacencyListUndirectedGraph<V> implements UndirectedGraph<V>{
+
+	HashMap<V, HashMap<V, Double>> adjacencyList = new HashMap<V, HashMap<V, Double>>();
+	
+}

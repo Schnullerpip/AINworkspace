@@ -1,0 +1,25 @@
+package testPackage;
+
+public class TestClass {
+	
+	public TestClass(int val){
+		this.a = val;
+		System.out.println("Hi im a newTestClass-Object, my value is: " + this.a);
+	}
+	
+	
+	public static void main(final String[] args){
+		int b = 3, c = 4;
+		double d = 1.1;
+		String f = "hello";
+		
+		System.out.println(c/b);
+		System.out.println((double)c/(double)b);
+		System.out.println((int)(b/d));
+		System.out.println(b/(int)d);
+		System.out.println(f.length());
+		for(int i=0;i<20;i++){
+			System.out.println("i="+i);
+		}		
+	}
+}
