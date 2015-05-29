@@ -1,0 +1,24 @@
+package testPackage;
+
+import java.awt.Dimension;
+import java.awt.GridLayout;
+
+import javax.swing.JComponent;
+
+public class TableComponent extends JComponent{
+	
+	public TableComponent(Game game){
+		
+		int columns, o;
+		for(columns = 0;columns < game.getTable().getLengthX(); columns++){
+			for(o = 0; o < game.getTable().getLengthY(); o++){
+				add(new TileComponent(game, columns,o));
+			}
+		}
+		
+		setPreferredSize(new Dimension(TileComponent.SIZEX*columns, TileComponent.SIZEY*o));
+		setLayout(new GridLayout(0, columns));
+		
+	}
+	
+}

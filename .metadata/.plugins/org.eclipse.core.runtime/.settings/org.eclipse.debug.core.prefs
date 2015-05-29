@@ -1,3 +1,3 @@
 eclipse.preferences.version=1
 org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=true
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="name"/>\n<expression enabled\="true" text\="predecessors"/>\n<expression enabled\="true" text\="successors"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="saveGames"/>\n<expression enabled\="true" text\="pPiece"/>\n<expression enabled\="true" text\="pieces"/>\n<expression enabled\="true" text\="results"/>\n</watchExpressions>\n

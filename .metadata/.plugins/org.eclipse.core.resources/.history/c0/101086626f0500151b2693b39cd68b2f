@@ -1,0 +1,13 @@
+package testPackage;
+
+import javax.swing.JComponent;
+
+public class TileComponent extends JComponent{
+	
+	private Game game;
+	
+	public TileComponent(Game g){
+		game = g; 
+	}
+
+}

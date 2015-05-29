@@ -1,0 +1,10 @@
+package carcassonne;
+
+public class Game {
+	
+	
+	public void printGame(){
+		System.out.println("haha");
+	}
+
+}

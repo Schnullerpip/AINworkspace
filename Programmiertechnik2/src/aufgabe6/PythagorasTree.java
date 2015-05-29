@@ -1,22 +1,19 @@
 package aufgabe6;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
-
 import aufgabe1.Point;
 
 public class PythagorasTree{
 
 	private static final int MINIMAL_EDGE_LENGTH = 5;
 	private static final int PITCH = 30;
-	private static final Dimension screenSize;
-	private static final double screenHeight, screenWidth;
 	private static final int STANDARD_EDGE_LENGTH = 50;
-	static{
-		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		screenHeight = screenSize.getHeight();
-		screenWidth = screenSize.getWidth();
-	}
+//	private static final Dimension screenSize;
+//	private static final double screenHeight, screenWidth;
+//	static{
+//		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+//		screenHeight = screenSize.getHeight();
+//		screenWidth = screenSize.getWidth();
+//	}
 	
 	
 	private PythagorasTree(){}

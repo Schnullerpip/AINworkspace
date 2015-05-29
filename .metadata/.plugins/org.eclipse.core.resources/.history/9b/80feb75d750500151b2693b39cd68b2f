@@ -1,0 +1,7 @@
+package testPackage;
+
+import javax.swing.JComponent;
+
+public class TableComponent extends JComponent{
+
+}

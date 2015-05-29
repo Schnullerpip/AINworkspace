@@ -1,0 +1,10 @@
+package testPackage;
+
+public class Game {
+	
+	
+	public void printGame(){
+		System.out.println("haha");
+	}
+
+}

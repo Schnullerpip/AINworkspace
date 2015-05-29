@@ -1,0 +1,15 @@
+package carcassonne;
+
+public class TestClass {
+	
+	public static void main(final String[] args){ 
+		
+		
+		TileComponent tc;
+		Game g;
+		
+		g = new Game(akjwhdviuehva);
+		
+		tc = new TileComponent(g);
+	}
+}
